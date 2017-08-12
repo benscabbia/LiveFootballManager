@@ -22,7 +22,7 @@ public class PitchManager : MonoBehaviour
     private Transform outerPitchHolder;
     private Transform pitchGraphics;
 
-    private List<Vector3> gridPositions = new List<Vector3>();
+    public List<Vector2> gridPositions = new List<Vector2>();
 
 
     private void InitializeList()
@@ -32,7 +32,7 @@ public class PitchManager : MonoBehaviour
         {
             for (int y = 0; y < pitchRows; y++)
             {
-                gridPositions.Add(new Vector3(x, y, 0));
+                gridPositions.Add(new Vector2(x, y));
             }
         }
     }
@@ -89,7 +89,7 @@ public class PitchManager : MonoBehaviour
 
 
 
-                instance = Instantiate(toInstantiate, new Vector3(x, y, 0), Quaternion.identity) as GameObject;
+                instance = Instantiate(toInstantiate, new Vector2(x, y), Quaternion.identity) as GameObject;
                 instance.transform.SetParent(pitchHolder);
             }
         }
@@ -104,7 +104,7 @@ public class PitchManager : MonoBehaviour
             for (int y = -5; y < pitchRows + 5; y++)
             {
                 // tidy up to only render where no tiles
-                GameObject instance = Instantiate(pitchGrassTile[1], new Vector3(x, y, 0), Quaternion.identity) as GameObject;
+                GameObject instance = Instantiate(pitchGrassTile[1], new Vector2(x, y), Quaternion.identity) as GameObject;
                 instance.transform.SetParent(outerPitchHolder);
 
             }
