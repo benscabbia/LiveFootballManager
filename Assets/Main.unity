@@ -145,7 +145,8 @@ MonoBehaviour:
   - {fileID: 1223319248699100, guid: fa1a286d26da29649beaa898fc6f749a, type: 2}
   - {fileID: 1223319248699100, guid: 92de5659531bb7c4e9e46d81b5896269, type: 2}
   outsidePitchSetup: 1
-  squares: 0
+  squares: 1
+  gridPositions: []
 --- !u!114 &230722978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,6 +158,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a078827e74c30543997986b0358cdc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  State: 0
+  IsRunning: 0
+  MinuteOfPlay: 0
+  middleLine: {fileID: 1223319248699100, guid: d1289608d88983f4ba18d4d7b726f95a, type: 2}
 --- !u!4 &230722979
 Transform:
   m_ObjectHideFlags: 0
