@@ -15,8 +15,6 @@ public class Player
 
         this.team = team;
         SetInitialPosition();
-
-
     }
 
     private void SetInitialPosition()

@@ -64,11 +64,11 @@ public class GameManager : MonoBehaviour
 
     private void SetupTeams()
     {
-        teamA = new Team("TEAM A", 0);
-        teamB = new Team("TEAM B", 1);
+        // 0 = home, 1 away?
+        teamA = new Team("TEAM A", 0, new Tactic442());
+        teamB = new Team("TEAM B", 1, new Tactic442());
 
-
-
+        teamCreated = true;
         // Should draw all players on screen
     }
 
@@ -79,32 +79,47 @@ public class GameManager : MonoBehaviour
 
     // Update is called once per frame
 
-    private bool gk = false;
-    private GameObject a;
+    private bool initialized = false;
+    bool teamCreated = false;
+    //private GameObject a;
     void Update()
     {
-        if (teamA != null && gk == false)
+        if (!initialized && teamCreated)
         {
-            if (teamA.PlayersInGame.Count > 0)
+            foreach (var playerPos in teamA.Tactic.TeamFormationPlayers)
             {
-                Player goalkeeper = teamA.PlayersInGame[0];
-                a = Instantiate(middleLine, new Vector2(goalkeeper.CurrentPosition.x, goalkeeper.CurrentPosition.y), Quaternion.identity) as GameObject;
-                gk = true;
-
-                a.transform.position = new Vector2(a.transform.position.x + 5, a.transform.position.y);
+                var value = playerPos.Value;
+                //Player goalkeeper = teamA.PlayersInGame[0];
+                //var a = Instantiate(playerPos.Value.sprite, value.CurrentPosition, Quaternion.identity) as GameObject;
+                var a = Instantiate(middleLine, value.CurrentPosition, Quaternion.identity) as GameObject;
 
             }
+            initialized = true;
+
         }
+
+        //if (teamA != null && gk == false)
+        //{
+        //    if (teamA.PlayersInGame.Count > 0)
+        //    {
+        //        Player goalkeeper = teamA.PlayersInGame[0];
+        //        a = Instantiate(middleLine, new Vector2(goalkeeper.CurrentPosition.x, goalkeeper.CurrentPosition.y), Quaternion.identity) as GameObject;
+        //        gk = true;
+
+        //        a.transform.position = new Vector2(a.transform.position.x + 5, a.transform.position.y);
+
+        //    }
+        //}
 
     }
 
     //TEMP
     void MovePlayer(GameObject a)
     {
-        if (gk)
-        {
-            a.transform.position = new Vector2(a.transform.position.x + 5, a.transform.position.y);
-        }
+        //if (gk)
+        //{
+        //    a.transform.position = new Vector2(a.transform.position.x + 5, a.transform.position.y);
+        //}
     }
 
 

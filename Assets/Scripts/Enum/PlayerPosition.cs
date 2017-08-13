@@ -1,10 +1,19 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public enum PlayerPosition {
+﻿public enum PlayerPosition
+{
     GOALKEEPER,
-    DEFENDER,
-    MIDFIELDER,
-    ATTACKER
+
+    LEFT_BACK,
+    RIGHT_BACK,
+    CENTER_BACK_LEFT,
+    CENTER_BACK_RIGHT,
+
+
+    LEFT_MIDFIELDER,
+    RIGHT_MIDFIELDER,
+    CENTER_MIDFIELDER_LEFT,
+    CENTER_MIDFIELDER_RIGHT,
+
+
+    STRIKER_CENTER_LEFT,
+    STRIKER_CENTER_RIGHT
 }

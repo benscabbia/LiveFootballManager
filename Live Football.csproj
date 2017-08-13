@@ -84,6 +84,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AbstractTactic.cs" />
     <Compile Include="Assets\Scripts\Ball.cs" />
     <Compile Include="Assets\Scripts\Enum\BallLocation.cs" />
     <Compile Include="Assets\Scripts\Enum\GameState.cs" />
@@ -96,6 +97,7 @@
     <Compile Include="Assets\Scripts\PlayerState.cs" />
     <Compile Include="Assets\Scripts\PlayerStates\Crossing.cs" />
     <Compile Include="Assets\Scripts\PositionCalculator.cs" />
+    <Compile Include="Assets\Scripts\Tactic442.cs" />
     <Compile Include="Assets\Scripts\Team.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
