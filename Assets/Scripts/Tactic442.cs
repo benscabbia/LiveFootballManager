@@ -45,7 +45,7 @@ public class Tactic442 : AbstractTactic
             // Need a get position method?
             TeamFormationPlayers[PlayerPosition.GOALKEEPER].CurrentPosition = PositionCalculator.Instance.InitialPosition(TeamFormationPlayers[PlayerPosition.GOALKEEPER]);
 
-            TeamFormationPlayers[PlayerPosition.CENTER_BACK_LEFT].CurrentPosition = new Vector2(5, 17);
+            TeamFormationPlayers[PlayerPosition.CENTER_BACK_LEFT].CurrentPosition = PositionCalculator.Instance.InitialPosition(TeamFormationPlayers[PlayerPosition.LEFT_BACK]); ;
 
         }
         else

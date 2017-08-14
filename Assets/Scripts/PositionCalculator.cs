@@ -13,7 +13,7 @@ public class PositionCalculator
     {
         get
         {
-            if (Instance == null)
+            if (instance == null)
             {
                 instance = new PositionCalculator();
             }
@@ -29,8 +29,9 @@ public class PositionCalculator
 
                 return new Vector2(1, 17);
 
+            case PlayerPosition.LEFT_BACK:
+                return new Vector2(5, 17);
 
-                break;
         }
 
         return new Vector2(5, 17);
