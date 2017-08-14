@@ -14,24 +14,6 @@ public class Player
         Position = position;
 
         this.team = team;
-        SetInitialPosition();
-    }
-
-    private void SetInitialPosition()
-    {
-        // left site of pitch        
-        if (this.Position == PlayerPosition.GOALKEEPER)
-        {
-            if (team.Index == 0)
-            {
-                this.CurrentPosition = new Vector2(1, 17);
-            }
-            else
-            {
-                this.CurrentPosition = new Vector2(53, 17);
-            }
-        }
-
     }
 
     public string Name { get { return Number.ToString(); } }

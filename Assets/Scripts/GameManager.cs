@@ -17,6 +17,8 @@ public class GameManager : MonoBehaviour
 
     // TEMP
     public GameObject middleLine;
+    public GameObject player1;
+    public GameObject player2;
 
     private PositionCalculator positionCalculator;
 
@@ -59,7 +61,7 @@ public class GameManager : MonoBehaviour
     private void PlayMatch()
     {
         //throw new NotImplementedException();
-        positionCalculator = new PositionCalculator(pitchManager);
+        //positionCalculator = new PositionCalculator(pitchManager);
     }
 
     private void SetupTeams()

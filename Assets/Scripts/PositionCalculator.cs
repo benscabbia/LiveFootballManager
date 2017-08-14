@@ -1,15 +1,40 @@
-﻿public class PositionCalculator
+﻿using UnityEngine;
+
+public class PositionCalculator
 {
 
 
-    private PitchManager pitchManager;
+    private Team team1;
+    private Team team2;
 
-    public PositionCalculator(PitchManager pitchManager)
+    private static PositionCalculator instance;
+
+    public static PositionCalculator Instance
     {
-        this.pitchManager = pitchManager;
+        get
+        {
+            if (Instance == null)
+            {
+                instance = new PositionCalculator();
+            }
+            return instance;
+        }
     }
 
+    public Vector2 InitialPosition(Player player)
+    {
+        switch (player.Position)
+        {
+            case PlayerPosition.GOALKEEPER:
 
+                return new Vector2(1, 17);
+
+
+                break;
+        }
+
+        return new Vector2(5, 17);
+    }
 
 
 

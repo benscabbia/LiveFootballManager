@@ -162,6 +162,8 @@ MonoBehaviour:
   IsRunning: 0
   MinuteOfPlay: 0
   middleLine: {fileID: 1223319248699100, guid: d1289608d88983f4ba18d4d7b726f95a, type: 2}
+  player1: {fileID: 1223319248699100, guid: e996773b3647e3940b64d009de8a886f, type: 2}
+  player2: {fileID: 1223319248699100, guid: c9b3e4433aae87841b5a2c0377a95666, type: 2}
 --- !u!4 &230722979
 Transform:
   m_ObjectHideFlags: 0

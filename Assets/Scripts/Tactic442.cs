@@ -13,7 +13,6 @@ public class Tactic442 : AbstractTactic
     }
 
     public Player Goalkeeper { get; set; }
-
     public List<Player> Defenders { get; set; }
     public List<Player> Midfielders { get; set; }
     public List<Player> Attackers { get; set; }
@@ -21,6 +20,7 @@ public class Tactic442 : AbstractTactic
 
     public override void SetInitialPositions(Team team)
     {
+        Team = team;
         TeamFormationPlayers = new Dictionary<PlayerPosition, Player>()
         {
             { PlayerPosition.GOALKEEPER, new Player(1, PlayerPosition.GOALKEEPER, team) },
@@ -43,15 +43,15 @@ public class Tactic442 : AbstractTactic
         if (team.Index == 0)
         {
             // Need a get position method?
-            TeamFormationPlayers[PlayerPosition.GOALKEEPER].CurrentPosition = new Vector2(1, 8);
+            TeamFormationPlayers[PlayerPosition.GOALKEEPER].CurrentPosition = PositionCalculator.Instance.InitialPosition(TeamFormationPlayers[PlayerPosition.GOALKEEPER]);
 
-            TeamFormationPlayers[PlayerPosition.CENTER_BACK_LEFT].CurrentPosition = new Vector2(5, 8);
+            TeamFormationPlayers[PlayerPosition.CENTER_BACK_LEFT].CurrentPosition = new Vector2(5, 17);
 
         }
         else
         {
-            TeamFormationPlayers[PlayerPosition.CENTER_BACK_LEFT].CurrentPosition = new Vector2(45, 8);
-            TeamFormationPlayers[PlayerPosition.CENTER_BACK_LEFT].CurrentPosition = new Vector2(40, 8);
+            TeamFormationPlayers[PlayerPosition.CENTER_BACK_LEFT].CurrentPosition = new Vector2(45, 17);
+            TeamFormationPlayers[PlayerPosition.CENTER_BACK_LEFT].CurrentPosition = new Vector2(40, 17);
 
 
         }

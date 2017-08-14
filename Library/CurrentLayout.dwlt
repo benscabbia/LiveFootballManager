@@ -427,9 +427,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 58.821384
+    m_Target: 43.64616
     speed: 2
-    m_Value: 58.821384
+    m_Value: 43.64616
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -568,8 +568,8 @@ MonoBehaviour:
     height: 404
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: fe060000
-    m_LastClickedID: 0
+    m_SelectedIDs: 56260000
+    m_LastClickedID: 9814
     m_ExpandedIDs: 1afcffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -631,18 +631,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefab
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefab
   m_LastFoldersGridSize: 16
   m_LastProjectPath: D:\Users\bensc\Documents\unity\Live Football
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 3a260000
-    m_LastClickedID: 9786
+    m_SelectedIDs: 2e260000
+    m_LastClickedID: 9774
     m_ExpandedIDs: 00000000262600003a26000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -702,18 +702,18 @@ MonoBehaviour:
     m_ExpandedInstanceIDs: ba2a0000d6280000b028000026aaffff7e25000000000000542c000014290000922500004229000018310000a093ffffa22700009a2f0000c42f00007826000090260000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: AbstractTactic
-      m_OriginalName: AbstractTactic
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 1790
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 11}
     m_CreateAssetUtility:
